@@ -1,0 +1,257 @@
+[debug] [2024-03-15T09:55:06.988Z] ----------------------------------------------------------------------
+[debug] [2024-03-15T09:55:06.991Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-03-15T09:55:06.992Z] CLI Version:   13.5.1
+[debug] [2024-03-15T09:55:06.992Z] Platform:      win32
+[debug] [2024-03-15T09:55:06.992Z] Node Version:  v21.1.0
+[debug] [2024-03-15T09:55:06.992Z] Time:          Fri Mar 15 2024 11:55:06 GMT+0200 (South Africa Standard Time)
+[debug] [2024-03-15T09:55:06.993Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-15T09:55:07.116Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-15T09:55:07.117Z] > authorizing via signed-in user (ngcebenhleshabangu@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-03-15T09:55:07.130Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-15T09:55:07.130Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-03-15T09:55:07.136Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-react-app-676fe.json
+[debug] [2024-03-15T09:55:07.187Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-15T09:55:07.187Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-15T09:55:07.187Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-03-15T09:55:07.192Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\ngcebenhleshabangu_gmail_com_application_default_credentials.json
+[debug] [2024-03-15T09:55:07.195Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\ngcebenhleshabangu_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\ngcebenhleshabangu_gmail_com_application_default_credentials.json"}}
+[debug] [2024-03-15T09:55:07.197Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-app-676fe/adminSdkConfig [none]
+[debug] [2024-03-15T09:55:08.254Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-app-676fe/adminSdkConfig 200
+[debug] [2024-03-15T09:55:08.254Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-app-676fe/adminSdkConfig {"projectId":"react-app-676fe","storageBucket":"react-app-676fe.appspot.com"}
+[debug] [2024-03-15T09:55:08.272Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-03-15T09:55:08.272Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-03-15T09:55:08.272Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\User\\.cache\\firebase\\emulators\\ui-v1.11.8\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\User\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.8\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-03-15T09:55:08.437Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-03-15T09:55:08.437Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\User\Documents\React Apps\amazon\amazon\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\Documents\\React Apps\\amazon\\amazon\\functions\" for Cloud Functions..."}}
+[debug] [2024-03-15T09:55:08.550Z] Validating nodejs source
+[debug] [2024-03-15T09:55:10.354Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.21.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-15T09:55:10.354Z] Building nodejs source
+[debug] [2024-03-15T09:55:10.355Z] Failed to find version of module node: reached end of search path C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "21". Using node@21 from host. 
+[debug] [2024-03-15T09:55:10.357Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-15T09:55:10.365Z] Found firebase-functions binary at 'C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8999
+
+[debug] [2024-03-15T09:55:11.331Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/react-app-676fe/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/react-app-676fe/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-03-15T11:05:48.243Z] File C:\Users\User\Documents\React Apps\amazon\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Documents\\React Apps\\amazon\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-03-15T11:05:49.251Z] Validating nodejs source
+[debug] [2024-03-15T11:05:59.276Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:301:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:330:34)
+[debug] [2024-03-15T11:05:59.277Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.21.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-15T11:05:59.277Z] Building nodejs source
+[debug] [2024-03-15T11:05:59.277Z] Failed to find version of module node: reached end of search path C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "21". Using node@21 from host. 
+[debug] [2024-03-15T11:05:59.281Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-15T11:05:59.291Z] Found firebase-functions binary at 'C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8078
+
+[debug] [2024-03-15T11:06:00.648Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-03-16T08:12:57.456Z] File C:\Users\User\Documents\React Apps\amazon\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Documents\\React Apps\\amazon\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-03-16T08:12:58.502Z] Validating nodejs source
+[debug] [2024-03-16T08:13:01.006Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.21.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-16T08:13:01.006Z] Building nodejs source
+[debug] [2024-03-16T08:13:01.008Z] Failed to find version of module node: reached end of search path C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "21". Using node@21 from host. 
+[debug] [2024-03-16T08:13:01.024Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-16T08:13:01.039Z] Found firebase-functions binary at 'C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8735
+
+[debug] [2024-03-16T08:13:02.592Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-03-16T08:39:01.048Z] File C:\Users\User\Documents\React Apps\amazon\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Documents\\React Apps\\amazon\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-03-16T08:39:02.063Z] Validating nodejs source
+[debug] [2024-03-16T08:39:04.427Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.21.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-16T08:39:04.427Z] Building nodejs source
+[debug] [2024-03-16T08:39:04.428Z] Failed to find version of module node: reached end of search path C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "21". Using node@21 from host. 
+[debug] [2024-03-16T08:39:04.429Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-16T08:39:04.438Z] Found firebase-functions binary at 'C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8154
+
+[debug] [2024-03-16T08:39:05.544Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-03-16T08:53:42.637Z] File C:\Users\User\Documents\React Apps\amazon\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Documents\\React Apps\\amazon\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-03-16T08:53:43.642Z] Validating nodejs source
+[debug] [2024-03-16T08:53:46.291Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.21.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-16T08:53:46.291Z] Building nodejs source
+[debug] [2024-03-16T08:53:46.291Z] Failed to find version of module node: reached end of search path C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "21". Using node@21 from host. 
+[debug] [2024-03-16T08:53:46.292Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-16T08:53:46.300Z] Found firebase-functions binary at 'C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8168
+
+[debug] [2024-03-16T08:53:47.111Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
