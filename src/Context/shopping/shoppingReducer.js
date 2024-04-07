@@ -13,7 +13,7 @@ export const shoppingReducer = (state, action) => {
       };
 
     case "REMOVE_FROM_BASKET":
-      const index = state.basket.findIdex(
+      const index = state.basket.findIndex(
         (basketItem) => basketItem.id === action.payload.id
       );
 

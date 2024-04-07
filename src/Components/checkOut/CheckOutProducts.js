@@ -4,29 +4,28 @@ import "../checkOut/checkoutProducts.css";
 import shoppingContext from "../../Context/shopping/shoppingContext";
 function CheckOutProducts({ id, image, tittle, rating, price, hideButton }) {
   const shop = useContext(shoppingContext);
-  const { removeFromBasket } = shop;
+  const { removeFromBasketHandler } = shop;
 
-  const removeFromBasketHandler = () => {
-    removeFromBasket({ id: id });
+  const removeFromBasket = () => {
+    removeFromBasketHandler({ item :{id: id }});
   };
 
-  return (  
+  return (
     <div className="checkout-product">
       <img src={image} alt="" className="checkout_product_image" />
 
       <div className="checkout_product_info">
-        <p className="checkout_product_tittle">{tittle}</p>
+        {/* <p className="checkout_product_tittle">
+          {tittle}</p> */}
 
-        <div className="checkout_product_rating">
-          <p>{rating}</p>
-        </div>
+        <div className="checkout_product_rating">{/* <p>{rating}</p> */}</div>
 
         <p className="checkout_product_price">
           <small>$</small> <strong>{price}</strong>
         </p>
 
         {!hideButton && (
-          <button onClick={removeFromBasketHandler}>Remove item</button>
+          <button onClick={removeFromBasket}>Remove item</button>
         )}
       </div>
     </div>

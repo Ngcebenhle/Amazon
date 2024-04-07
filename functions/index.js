@@ -24,11 +24,11 @@ app.use(express.json());
 
 app.get("/", (req, res) => res.status(200).send("Hello World"));
 
-app.get("/payments/create", async (req, res) => {
+app.post("/payments/create", async (req, res) => {
   const total = req.query;
- 
+   console.log(total.total)
   const paymentIntent = await stripe.paymentIntents.create({
-    amount:total,// get the total from getTotal method in the reducer.
+    amount:total.total,// get the total from getTotal method in the reducer.
     currency: "usd"
   });
   res.status(201).send({ clientSecret: paymentIntent.client_secret });

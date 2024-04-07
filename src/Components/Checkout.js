@@ -8,15 +8,14 @@ function Checkout() {
   const shop = useContext(shoppingContext);
   const { basket, user } = shop;
 
-  const print =()=>{
-    basket.map(item=>{
-      console.log(item.item.id)
-      
-    })
-  }
+  // const print =()=>{
+  //   basket.map(item=>{
+  //     console.log(item.item.id)
+
+  //   })
+  // }
 
   return (
-    
     <div className="checkout">
       <div className="checkout_left">
         <img
@@ -26,22 +25,28 @@ function Checkout() {
         />
 
         <div className="checkout">
-          <button onClick={print}>Print</button>
-          <h3>Hello, {user?.email}</h3>
-          <h2 className="checkout_tittle">Shopping Basket</h2>
-          
-          {basket.map(item => (
-            <CheckOutProducts
-              key={item.item.id}
-              id={item.item.id}
-              tittle={item.item.tittle}
-              image={item.item.image}
-              price={item.item.price}
-              rating={item.item.rating}
-            />
-          ))}
+          {/* <button onClick={print}>Print</button> */}
+          <div className="ch_tittle">
+            <h3>Hello, {user?.email}</h3>
+            <h2 className="checkout_tittle">Shopping Basket</h2>
+          </div>
+
+          <div className="display">
+            {basket.map((item) => (
+              <CheckOutProducts
+                key={item.item.id}
+                id={item.item.id}
+                tittle={item.item.tittle}
+                image={item.item.image}
+                price={item.item.price}
+                rating={item.item.rating}
+              />
+            ))}
+          </div>
         </div>
+        <hr />
       </div>
+
       <div className="checkout_right">
         <SubTotal />
       </div>

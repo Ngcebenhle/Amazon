@@ -29,9 +29,8 @@ function SubTotal() {
         prefix={"$"}
       />
       <button onClick={(e) => {
-        console.log(getBasketTotal(basket))
         history.push("/payment")}}>
-        proceed to checkout
+        Proceed to checkout
       </button>
     </div>
   );

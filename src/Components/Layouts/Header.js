@@ -27,16 +27,22 @@ const Header = () => {
 
     <header className="header">
       {/* Logo Image in the link tags */}
-      <Link to="/">
-        <img
-          src="http://pngimg.com/uploads/amazon_PNG11.png"
-          alt="Amazon Logo"
-        />
-      </Link>
 
-      <div className="header_search">
-        <input className="header_input" type="text" />
-        <SearchIcon className="search_icon" />
+      <div className="nav">
+        <div className="logo">
+          <Link to="/">
+            <img
+              className="header_logo"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm9rAwHfpqTvXIi5agZX4MmL_kjB-zAxErDez1ih0Ogw&s"
+              alt="Amazon Logo"
+            />
+          </Link>
+        </div>
+
+        <div className="header_search">
+          <input className="header_input" type="text" />
+          <SearchIcon className="search_icon" />
+        </div>
       </div>
 
       <div className="header_nav">

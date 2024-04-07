@@ -29,8 +29,8 @@ function Payment() {
     //Generate special stripe secret which will allow us to charge the customer
     const getClientSecret = async () => {
       const response = await instance({
-        method: "POST",
-        url: `/payments/create?total =`+ getBasketTotal(basket) * 100// how can i make this into an interger ??????????
+        method: "post",
+        url: "/payments/create?total=" + getBasketTotal(basket) * 100, // how can i make this into an interger ??????????
       });
       console.log("this is my work " + response.data.clientSecret);
       setClientSecret(response.data.clientSecret);
@@ -61,7 +61,7 @@ function Payment() {
 
         setSucceeded(true);
         setError(null);
-        processing(false);
+        setProcessing(false);
         emptyBasket();
         history.push("/orders");
       });
