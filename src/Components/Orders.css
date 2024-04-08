@@ -1,0 +1,12 @@
+.orders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orders > h1 {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.orders > button {
+    background-color: rgb(219, 207, 92);
+}

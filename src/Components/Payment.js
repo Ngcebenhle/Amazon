@@ -4,7 +4,7 @@ import Checkout from "./Checkout";
 import instance from "../Axios";
 
 import shoppingContext from "../Context/shopping/shoppingContext";
-import CheckOutProducts from "../Components/checkOut/CheckOutProducts";
+// import CheckOutProducts from "../Components/checkOut/CheckOutProducts";
 import { Link, useHistory } from "react-router-dom";
 import CurrencyFormat from "react-currency-format";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
@@ -32,13 +32,13 @@ function Payment() {
         method: "post",
         url: "/payments/create?total=" + getBasketTotal(basket) * 100, // how can i make this into an interger ??????????
       });
-      console.log("this is my work " + response.data.clientSecret);
+      // console.log("this is my work " + response.data.clientSecret);
       setClientSecret(response.data.clientSecret);
     };
     getClientSecret();
   }, [basket]);
 
-  console.log("this is " + clientSecret);
+  // console.log("this is " + clientSecret);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -63,7 +63,7 @@ function Payment() {
         setError(null);
         setProcessing(false);
         emptyBasket();
-        history.push("/orders");
+        history.push("/Orders");
       });
   };
 
@@ -98,7 +98,7 @@ function Payment() {
           </div>
 
           <div className="payment_items">
-            {basket.map((item) => (
+            {/* {basket.map((item) => (
               <Checkout
                 key={item.id}
                 id={item.id}
@@ -107,7 +107,8 @@ function Payment() {
                 price={item.price}
                 rating={item.rating}
               />
-            ))}
+            ))} */}
+            <Checkout/>
           </div>
         </div>
 

@@ -1,257 +1,135 @@
-[debug] [2024-03-15T09:55:06.988Z] ----------------------------------------------------------------------
-[debug] [2024-03-15T09:55:06.991Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
-[debug] [2024-03-15T09:55:06.992Z] CLI Version:   13.5.1
-[debug] [2024-03-15T09:55:06.992Z] Platform:      win32
-[debug] [2024-03-15T09:55:06.992Z] Node Version:  v21.1.0
-[debug] [2024-03-15T09:55:06.992Z] Time:          Fri Mar 15 2024 11:55:06 GMT+0200 (South Africa Standard Time)
-[debug] [2024-03-15T09:55:06.993Z] ----------------------------------------------------------------------
+[debug] [2024-04-08T17:27:22.939Z] ----------------------------------------------------------------------
+[debug] [2024-04-08T17:27:22.943Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2024-04-08T17:27:22.943Z] CLI Version:   13.7.1
+[debug] [2024-04-08T17:27:22.943Z] Platform:      win32
+[debug] [2024-04-08T17:27:22.943Z] Node Version:  v21.1.0
+[debug] [2024-04-08T17:27:22.944Z] Time:          Mon Apr 08 2024 19:27:22 GMT+0200 (South Africa Standard Time)
+[debug] [2024-04-08T17:27:22.944Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-03-15T09:55:07.116Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-03-15T09:55:07.117Z] > authorizing via signed-in user (ngcebenhleshabangu@gmail.com)
-[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2024-03-15T09:55:07.130Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2024-03-15T09:55:07.130Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2024-03-15T09:55:07.136Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-react-app-676fe.json
-[debug] [2024-03-15T09:55:07.187Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2024-03-15T09:55:07.187Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2024-03-15T09:55:07.187Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
-[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
-[debug] [2024-03-15T09:55:07.192Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\ngcebenhleshabangu_gmail_com_application_default_credentials.json
-[debug] [2024-03-15T09:55:07.195Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\ngcebenhleshabangu_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\ngcebenhleshabangu_gmail_com_application_default_credentials.json"}}
-[debug] [2024-03-15T09:55:07.197Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-app-676fe/adminSdkConfig [none]
-[debug] [2024-03-15T09:55:08.254Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-app-676fe/adminSdkConfig 200
-[debug] [2024-03-15T09:55:08.254Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-app-676fe/adminSdkConfig {"projectId":"react-app-676fe","storageBucket":"react-app-676fe.appspot.com"}
-[debug] [2024-03-15T09:55:08.272Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2024-03-15T09:55:08.272Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2024-03-15T09:55:08.272Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\User\\.cache\\firebase\\emulators\\ui-v1.11.8\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\User\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.8\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
-[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2024-03-15T09:55:08.437Z] Web / API server started at 127.0.0.1:4000
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
-[debug] [2024-03-15T09:55:08.437Z] Web / API server started at ::1:4000
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
-[info] i  functions: Watching "C:\Users\User\Documents\React Apps\amazon\amazon\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\Documents\\React Apps\\amazon\\amazon\\functions\" for Cloud Functions..."}}
-[debug] [2024-03-15T09:55:08.550Z] Validating nodejs source
-[debug] [2024-03-15T09:55:10.354Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "18"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.3",
-    "firebase-admin": "^11.8.0",
-    "firebase-functions": "^4.3.1",
-    "stripe": "^14.21.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.15.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^3.1.0"
-  },
-  "private": true
-}
-[debug] [2024-03-15T09:55:10.354Z] Building nodejs source
-[debug] [2024-03-15T09:55:10.355Z] Failed to find version of module node: reached end of search path C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules
-[warn] !  functions: Your requested "node" version "18" doesn't match your global version "21". Using node@21 from host. 
-[debug] [2024-03-15T09:55:10.357Z] Could not find functions.yaml. Must use http discovery
-[debug] [2024-03-15T09:55:10.365Z] Found firebase-functions binary at 'C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8999
-
-[debug] [2024-03-15T09:55:11.331Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
-[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/react-app-676fe/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/react-app-676fe/us-central1/api)."}}
+[debug] [2024-04-08T17:27:23.018Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-08T17:27:23.019Z] > authorizing via signed-in user (ngcebenhleshabangu@gmail.com)
+[debug] [2024-04-08T17:27:23.019Z] [iam] checking project react-app-676fe for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-08T17:27:23.021Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-app-676fe:testIamPermissions [none]
+[debug] [2024-04-08T17:27:23.021Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-app-676fe:testIamPermissions x-goog-quota-user=projects/react-app-676fe
+[debug] [2024-04-08T17:27:23.022Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-app-676fe:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-08T17:27:34.641Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-app-676fe:testIamPermissions 200
+[debug] [2024-04-08T17:27:34.642Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-app-676fe:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-08T17:27:34.643Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-app-676fe [none]
+[debug] [2024-04-08T17:27:35.783Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-app-676fe 200
+[debug] [2024-04-08T17:27:35.784Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-app-676fe {"projectId":"react-app-676fe","projectNumber":"1043533173285","displayName":"React-App-Amazon","name":"projects/react-app-676fe","resources":{"hostingSite":"react-app-676fe"},"state":"ACTIVE","etag":"1_769e38b2-a4c1-49d2-beb0-70da8bf93fbd"}
 [info] 
-┌─────────────────────────────────────────────────────────────┐
-│ ✔  All emulators ready! It is now safe to connect your app. │
-│ i  View Emulator UI at http://127.0.0.1:4000/               │
-└─────────────────────────────────────────────────────────────┘
-
-┌───────────┬────────────────┬─────────────────────────────────┐
-│ Emulator  │ Host:Port      │ View in Emulator UI             │
-├───────────┼────────────────┼─────────────────────────────────┤
-│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
-└───────────┴────────────────┴─────────────────────────────────┘
-  Emulator Hub running at 127.0.0.1:4400
-  Other reserved ports: 4500
-
-Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
- 
-[debug] [2024-03-15T11:05:48.243Z] File C:\Users\User\Documents\React Apps\amazon\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Documents\\React Apps\\amazon\\amazon\\functions\\index.js changed, reloading triggers"}}
-[debug] [2024-03-15T11:05:49.251Z] Validating nodejs source
-[debug] [2024-03-15T11:05:59.276Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
-    at Object.spawnSync (node:internal/child_process:1124:20)
-    at Object.spawnSync (node:child_process:876:24)
-    at Function.spawnSync [as sync] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
-    at Object.getLatestSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
-    at Object.checkFunctionsSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
-    at Delegate.validate (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
-    at FunctionsEmulator.discoverTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:301:35)
-    at async FunctionsEmulator.loadTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:330:34)
-[debug] [2024-03-15T11:05:59.277Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "18"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.3",
-    "firebase-admin": "^11.8.0",
-    "firebase-functions": "^4.3.1",
-    "stripe": "^14.21.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.15.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^3.1.0"
-  },
-  "private": true
-}
-[debug] [2024-03-15T11:05:59.277Z] Building nodejs source
-[debug] [2024-03-15T11:05:59.277Z] Failed to find version of module node: reached end of search path C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules
-[warn] !  functions: Your requested "node" version "18" doesn't match your global version "21". Using node@21 from host. 
-[debug] [2024-03-15T11:05:59.281Z] Could not find functions.yaml. Must use http discovery
-[debug] [2024-03-15T11:05:59.291Z] Found firebase-functions binary at 'C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8078
-
-[debug] [2024-03-15T11:06:00.648Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
-[debug] [2024-03-16T08:12:57.456Z] File C:\Users\User\Documents\React Apps\amazon\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Documents\\React Apps\\amazon\\amazon\\functions\\index.js changed, reloading triggers"}}
-[debug] [2024-03-16T08:12:58.502Z] Validating nodejs source
-[debug] [2024-03-16T08:13:01.006Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "18"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.3",
-    "firebase-admin": "^11.8.0",
-    "firebase-functions": "^4.3.1",
-    "stripe": "^14.21.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.15.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^3.1.0"
-  },
-  "private": true
-}
-[debug] [2024-03-16T08:13:01.006Z] Building nodejs source
-[debug] [2024-03-16T08:13:01.008Z] Failed to find version of module node: reached end of search path C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules
-[warn] !  functions: Your requested "node" version "18" doesn't match your global version "21". Using node@21 from host. 
-[debug] [2024-03-16T08:13:01.024Z] Could not find functions.yaml. Must use http discovery
-[debug] [2024-03-16T08:13:01.039Z] Found firebase-functions binary at 'C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8735
-
-[debug] [2024-03-16T08:13:02.592Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
-[debug] [2024-03-16T08:39:01.048Z] File C:\Users\User\Documents\React Apps\amazon\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Documents\\React Apps\\amazon\\amazon\\functions\\index.js changed, reloading triggers"}}
-[debug] [2024-03-16T08:39:02.063Z] Validating nodejs source
-[debug] [2024-03-16T08:39:04.427Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "18"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.3",
-    "firebase-admin": "^11.8.0",
-    "firebase-functions": "^4.3.1",
-    "stripe": "^14.21.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.15.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^3.1.0"
-  },
-  "private": true
-}
-[debug] [2024-03-16T08:39:04.427Z] Building nodejs source
-[debug] [2024-03-16T08:39:04.428Z] Failed to find version of module node: reached end of search path C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules
-[warn] !  functions: Your requested "node" version "18" doesn't match your global version "21". Using node@21 from host. 
-[debug] [2024-03-16T08:39:04.429Z] Could not find functions.yaml. Must use http discovery
-[debug] [2024-03-16T08:39:04.438Z] Found firebase-functions binary at 'C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8154
-
-[debug] [2024-03-16T08:39:05.544Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
-[debug] [2024-03-16T08:53:42.637Z] File C:\Users\User\Documents\React Apps\amazon\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Documents\\React Apps\\amazon\\amazon\\functions\\index.js changed, reloading triggers"}}
-[debug] [2024-03-16T08:53:43.642Z] Validating nodejs source
-[debug] [2024-03-16T08:53:46.291Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "18"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.3",
-    "firebase-admin": "^11.8.0",
-    "firebase-functions": "^4.3.1",
-    "stripe": "^14.21.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.15.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^3.1.0"
-  },
-  "private": true
-}
-[debug] [2024-03-16T08:53:46.291Z] Building nodejs source
-[debug] [2024-03-16T08:53:46.291Z] Failed to find version of module node: reached end of search path C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules
-[warn] !  functions: Your requested "node" version "18" doesn't match your global version "21". Using node@21 from host. 
-[debug] [2024-03-16T08:53:46.292Z] Could not find functions.yaml. Must use http discovery
-[debug] [2024-03-16T08:53:46.300Z] Found firebase-functions binary at 'C:\Users\User\Documents\React Apps\amazon\amazon\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8168
-
-[debug] [2024-03-16T08:53:47.111Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] === Deploying to 'react-app-676fe'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-04-08T17:27:39.292Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/versions [none]
+[debug] [2024-04-08T17:27:39.292Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-04-08T17:27:43.603Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/versions 200
+[debug] [2024-04-08T17:27:43.603Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/versions {"name":"projects/1043533173285/sites/react-app-676fe/versions/15c04cc732e7142f","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[react-app-676fe]: beginning deploy... 
+[info] i  hosting[react-app-676fe]: found 14 files in build 
+[debug] [2024-04-08T17:27:43.613Z] [hosting] uploading with 200 concurrency
+[debug] [2024-04-08T17:27:43.614Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2024-04-08T17:27:43.992Z] [hosting] hash cache [YnVpbGQ] stored for 14 files
+[debug] [2024-04-08T17:27:43.992Z] [hosting][hash queue][FINAL] {"max":369,"min":7,"avg":36.357142857142854,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":377}
+[debug] [2024-04-08T17:27:43.993Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1043533173285/sites/react-app-676fe/versions/15c04cc732e7142f:populateFiles [none]
+[debug] [2024-04-08T17:27:43.993Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1043533173285/sites/react-app-676fe/versions/15c04cc732e7142f:populateFiles {"files":{"/asset-manifest.json":"89ab56861fe856efe2a390f1e65108093e77876452dc530d774fa3dce1b226cd","/index.html":"e2bd845e7c68812d2d0ffb0a64dbfc536aef8529c5045b015e3a296a9eaa3cd5","/favicon.ico":"27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d","/logo192.png":"79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0","/manifest.json":"ee04fb47e525c67d8424ffe9b4d8a8a24e434504478afca4e0ca602146836d4c","/static/css/main.218a3aa5.css":"77bbbbc030465a24cf1e68457b8d794bc1c7f630ecd36591c7cafcbecda5c29f","/logo512.png":"212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d","/static/js/453.0b80c507.chunk.js":"94fb628867949f5cf797aee207632afd284512bff96408e64ce401e9176fce68","/static/js/main.536ecde5.js.LICENSE.txt":"e47f99c583f9c92e2c9b705ea84c25519c3c3bf4430539bb2eed5c7f9ac53778","/static/css/main.218a3aa5.css.map":"a4e3d6f1313ea678f02640b9af9b0b2713052db6bff2225e6700f2fe8476064d","/static/js/453.0b80c507.chunk.js.map":"9308f546bf3bd159acbe1d72d0aced87a849a7100508804ebf51766ca00f233f","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/static/js/main.536ecde5.js":"4278352db65ee5c0042cea403788de8adba14103e04e0bf496b39a5423975b37","/static/js/main.536ecde5.js.map":"d753aacd4525163cbcc11d3d5a8768caced1e8f6a53a54d9d75f608ca13a1029"}}
+[debug] [2024-04-08T17:27:44.933Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1043533173285/sites/react-app-676fe/versions/15c04cc732e7142f:populateFiles 200
+[debug] [2024-04-08T17:27:44.933Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1043533173285/sites/react-app-676fe/versions/15c04cc732e7142f:populateFiles {"uploadRequiredHashes":["a4e3d6f1313ea678f02640b9af9b0b2713052db6bff2225e6700f2fe8476064d","bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","ee04fb47e525c67d8424ffe9b4d8a8a24e434504478afca4e0ca602146836d4c","4278352db65ee5c0042cea403788de8adba14103e04e0bf496b39a5423975b37","9308f546bf3bd159acbe1d72d0aced87a849a7100508804ebf51766ca00f233f","94fb628867949f5cf797aee207632afd284512bff96408e64ce401e9176fce68","212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d","e2bd845e7c68812d2d0ffb0a64dbfc536aef8529c5045b015e3a296a9eaa3cd5","e47f99c583f9c92e2c9b705ea84c25519c3c3bf4430539bb2eed5c7f9ac53778","89ab56861fe856efe2a390f1e65108093e77876452dc530d774fa3dce1b226cd","27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d","d753aacd4525163cbcc11d3d5a8768caced1e8f6a53a54d9d75f608ca13a1029","79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0","77bbbbc030465a24cf1e68457b8d794bc1c7f630ecd36591c7cafcbecda5c29f"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files"}
+[debug] [2024-04-08T17:27:44.936Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/a4e3d6f1313ea678f02640b9af9b0b2713052db6bff2225e6700f2fe8476064d [none]
+[debug] [2024-04-08T17:27:44.936Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/a4e3d6f1313ea678f02640b9af9b0b2713052db6bff2225e6700f2fe8476064d [stream]
+[debug] [2024-04-08T17:27:44.937Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [none]
+[debug] [2024-04-08T17:27:44.937Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2024-04-08T17:27:44.938Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/ee04fb47e525c67d8424ffe9b4d8a8a24e434504478afca4e0ca602146836d4c [none]
+[debug] [2024-04-08T17:27:44.938Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/ee04fb47e525c67d8424ffe9b4d8a8a24e434504478afca4e0ca602146836d4c [stream]
+[debug] [2024-04-08T17:27:44.939Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/4278352db65ee5c0042cea403788de8adba14103e04e0bf496b39a5423975b37 [none]
+[debug] [2024-04-08T17:27:44.939Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/4278352db65ee5c0042cea403788de8adba14103e04e0bf496b39a5423975b37 [stream]
+[debug] [2024-04-08T17:27:44.940Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/9308f546bf3bd159acbe1d72d0aced87a849a7100508804ebf51766ca00f233f [none]
+[debug] [2024-04-08T17:27:44.940Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/9308f546bf3bd159acbe1d72d0aced87a849a7100508804ebf51766ca00f233f [stream]
+[debug] [2024-04-08T17:27:44.942Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/94fb628867949f5cf797aee207632afd284512bff96408e64ce401e9176fce68 [none]
+[debug] [2024-04-08T17:27:44.942Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/94fb628867949f5cf797aee207632afd284512bff96408e64ce401e9176fce68 [stream]
+[debug] [2024-04-08T17:27:44.943Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d [none]
+[debug] [2024-04-08T17:27:44.943Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d [stream]
+[debug] [2024-04-08T17:27:44.944Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/e2bd845e7c68812d2d0ffb0a64dbfc536aef8529c5045b015e3a296a9eaa3cd5 [none]
+[debug] [2024-04-08T17:27:44.944Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/e2bd845e7c68812d2d0ffb0a64dbfc536aef8529c5045b015e3a296a9eaa3cd5 [stream]
+[debug] [2024-04-08T17:27:44.945Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/e47f99c583f9c92e2c9b705ea84c25519c3c3bf4430539bb2eed5c7f9ac53778 [none]
+[debug] [2024-04-08T17:27:44.945Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/e47f99c583f9c92e2c9b705ea84c25519c3c3bf4430539bb2eed5c7f9ac53778 [stream]
+[debug] [2024-04-08T17:27:44.946Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/89ab56861fe856efe2a390f1e65108093e77876452dc530d774fa3dce1b226cd [none]
+[debug] [2024-04-08T17:27:44.946Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/89ab56861fe856efe2a390f1e65108093e77876452dc530d774fa3dce1b226cd [stream]
+[debug] [2024-04-08T17:27:44.947Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d [none]
+[debug] [2024-04-08T17:27:44.947Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d [stream]
+[debug] [2024-04-08T17:27:44.948Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/d753aacd4525163cbcc11d3d5a8768caced1e8f6a53a54d9d75f608ca13a1029 [none]
+[debug] [2024-04-08T17:27:44.948Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/d753aacd4525163cbcc11d3d5a8768caced1e8f6a53a54d9d75f608ca13a1029 [stream]
+[debug] [2024-04-08T17:27:44.948Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0 [none]
+[debug] [2024-04-08T17:27:44.949Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0 [stream]
+[debug] [2024-04-08T17:27:44.949Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/77bbbbc030465a24cf1e68457b8d794bc1c7f630ecd36591c7cafcbecda5c29f [none]
+[debug] [2024-04-08T17:27:44.949Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/77bbbbc030465a24cf1e68457b8d794bc1c7f630ecd36591c7cafcbecda5c29f [stream]
+[debug] [2024-04-08T17:27:44.950Z] [hosting][populate queue][FINAL] {"max":946,"min":946,"avg":946,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":961}
+[debug] [2024-04-08T17:27:44.950Z] [hosting] uploads queued: 14
+[debug] [2024-04-08T17:27:55.589Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/a4e3d6f1313ea678f02640b9af9b0b2713052db6bff2225e6700f2fe8476064d 200
+[debug] [2024-04-08T17:27:55.589Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/a4e3d6f1313ea678f02640b9af9b0b2713052db6bff2225e6700f2fe8476064d [stream]
+[debug] [2024-04-08T17:27:55.596Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/94fb628867949f5cf797aee207632afd284512bff96408e64ce401e9176fce68 200
+[debug] [2024-04-08T17:27:55.597Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/94fb628867949f5cf797aee207632afd284512bff96408e64ce401e9176fce68 [stream]
+[debug] [2024-04-08T17:27:55.907Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/9308f546bf3bd159acbe1d72d0aced87a849a7100508804ebf51766ca00f233f 200
+[debug] [2024-04-08T17:27:55.908Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/9308f546bf3bd159acbe1d72d0aced87a849a7100508804ebf51766ca00f233f [stream]
+[debug] [2024-04-08T17:27:55.911Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d 200
+[debug] [2024-04-08T17:27:55.911Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d [stream]
+[debug] [2024-04-08T17:27:56.090Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/77bbbbc030465a24cf1e68457b8d794bc1c7f630ecd36591c7cafcbecda5c29f 200
+[debug] [2024-04-08T17:27:56.090Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/77bbbbc030465a24cf1e68457b8d794bc1c7f630ecd36591c7cafcbecda5c29f [stream]
+[debug] [2024-04-08T17:27:56.533Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 200
+[debug] [2024-04-08T17:27:56.534Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2024-04-08T17:27:56.544Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/ee04fb47e525c67d8424ffe9b4d8a8a24e434504478afca4e0ca602146836d4c 200
+[debug] [2024-04-08T17:27:56.544Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/ee04fb47e525c67d8424ffe9b4d8a8a24e434504478afca4e0ca602146836d4c [stream]
+[debug] [2024-04-08T17:27:56.760Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d 200
+[debug] [2024-04-08T17:27:56.760Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d [stream]
+[debug] [2024-04-08T17:27:56.770Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0 200
+[debug] [2024-04-08T17:27:56.771Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0 [stream]
+[debug] [2024-04-08T17:27:56.905Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/e47f99c583f9c92e2c9b705ea84c25519c3c3bf4430539bb2eed5c7f9ac53778 200
+[debug] [2024-04-08T17:27:56.906Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/e47f99c583f9c92e2c9b705ea84c25519c3c3bf4430539bb2eed5c7f9ac53778 [stream]
+[debug] [2024-04-08T17:27:57.115Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/e2bd845e7c68812d2d0ffb0a64dbfc536aef8529c5045b015e3a296a9eaa3cd5 200
+[debug] [2024-04-08T17:27:57.115Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/e2bd845e7c68812d2d0ffb0a64dbfc536aef8529c5045b015e3a296a9eaa3cd5 [stream]
+[debug] [2024-04-08T17:27:57.279Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/89ab56861fe856efe2a390f1e65108093e77876452dc530d774fa3dce1b226cd 200
+[debug] [2024-04-08T17:27:57.279Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/89ab56861fe856efe2a390f1e65108093e77876452dc530d774fa3dce1b226cd [stream]
+[debug] [2024-04-08T17:28:03.291Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/4278352db65ee5c0042cea403788de8adba14103e04e0bf496b39a5423975b37 200
+[debug] [2024-04-08T17:28:03.292Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/4278352db65ee5c0042cea403788de8adba14103e04e0bf496b39a5423975b37 [stream]
+[debug] [2024-04-08T17:28:22.823Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/d753aacd4525163cbcc11d3d5a8768caced1e8f6a53a54d9d75f608ca13a1029 200
+[debug] [2024-04-08T17:28:22.823Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-app-676fe/versions/15c04cc732e7142f/files/d753aacd4525163cbcc11d3d5a8768caced1e8f6a53a54d9d75f608ca13a1029 [stream]
+[debug] [2024-04-08T17:28:22.823Z] [hosting][upload queue][FINAL] {"max":37888,"min":10657,"avg":13859.857142857143,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":37890}
+[info] +  hosting[react-app-676fe]: file upload complete 
+[debug] [2024-04-08T17:28:22.824Z] [hosting] deploy completed after 39220ms
+[debug] [2024-04-08T17:28:22.824Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "react-app-676fe"
+    },
+    "version": "projects/1043533173285/sites/react-app-676fe/versions/15c04cc732e7142f"
+  }
+]
+[info] i  hosting[react-app-676fe]: finalizing version... 
+[debug] [2024-04-08T17:28:22.827Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/versions/15c04cc732e7142f updateMask=status%2Cconfig
+[debug] [2024-04-08T17:28:22.827Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/versions/15c04cc732e7142f {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2024-04-08T17:29:10.945Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/versions/15c04cc732e7142f 200
+[debug] [2024-04-08T17:29:10.945Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/versions/15c04cc732e7142f {"name":"projects/1043533173285/sites/react-app-676fe/versions/15c04cc732e7142f","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-04-08T17:27:42.179461Z","createUser":{"email":"ngcebenhleshabangu@gmail.com"},"finalizeTime":"2024-04-08T17:28:51.949946Z","finalizeUser":{"email":"ngcebenhleshabangu@gmail.com"}}
+[debug] [2024-04-08T17:29:10.946Z] [hosting] finalized version for react-app-676fe:[object Object]
+[info] +  hosting[react-app-676fe]: version finalized 
+[info] i  hosting[react-app-676fe]: releasing new version... 
+[debug] [2024-04-08T17:29:10.948Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/channels/live/releases versionName=projects%2F1043533173285%2Fsites%2Freact-app-676fe%2Fversions%2F15c04cc732e7142f
+[debug] [2024-04-08T17:29:10.948Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/channels/live/releases {}
+[debug] [2024-04-08T17:29:22.067Z] *** [apiv2] error from fetch(https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/channels/live/releases?versionName=projects%2F1043533173285%2Fsites%2Freact-app-676fe%2Fversions%2F15c04cc732e7142f, {"headers":{},"method":"POST","body":"{}"}): FetchError: request to https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-app-676fe/channels/live/releases?versionName=projects%2F1043533173285%2Fsites%2Freact-app-676fe%2Fversions%2F15c04cc732e7142f failed, reason: read ECONNRESET
+[debug] [2024-04-08T17:29:27.085Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:258:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
