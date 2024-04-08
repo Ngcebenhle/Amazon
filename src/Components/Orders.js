@@ -5,7 +5,7 @@ import {db} from '../firebase'
 const Orders = () => {
   return (
     <div>
-        <h1>Your Order</h1>
+        <h1>Order Completed successfully</h1>
     </div>
   )
 }
