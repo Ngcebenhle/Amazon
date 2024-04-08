@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # PVT
-Axios
-firebase
+Axios.js
+firebase.js
